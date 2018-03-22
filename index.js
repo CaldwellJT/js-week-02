@@ -13,18 +13,18 @@ const invoke = () =>
 const helloWorld = () =>
   // rewrite the following block so
   // the string is returned
-  "Hello World"
+  { return "Hello World" }
 
 
 const whatIsIt = () =>
   // make it true! what does void 0 equal?
-  void 0 === void 0
+  void 0 === undefined
 
 
 const commaFTW = () =>
   // change one + to a comma so the
   // function returns 7
-  (1, 1 + 2 + 4)
+  (1 , 1 + 2 + 4)
 
 
 /* 
@@ -34,15 +34,14 @@ const commaFTW = () =>
  */
 const buildingBlocks = () => (
   // change the next line to use block syntax
-  () => 1 + 1, 
-        2 + 2
+  () => { return 'passing this test like a boss'}
 )()
 
 
 const writeAFunction = () => (
   // replace the empty string with a function
   // that returns any non-empty string
-  () => 1 + 1
+  () => 'non-empty'
 )()
 
 
@@ -56,10 +55,11 @@ const returnSomething = () =>
   // this is currently the same function as
   // the previous one; this time, make the
   // function return something
-  (() => 'Hello, JavaScript')()
+  (() => {return 'Hello, JavaScript'})()
 
 
 const inlineComment = () =>
+  'uncomment this line'
   // 'change this line to an inline comment'
 
 
