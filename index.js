@@ -56,18 +56,19 @@ const returnSomething = () =>
   // this is currently the same function as
   // the previous one; this time, make the
   // function return something
-  (() => "Hello, JavaScript")()
+  (() => 'Hello, JavaScript')()
 
 
 const inlineComment = () =>
   // 'change this line to an inline comment'
 
 
-  const multiLineNoInline = () => 
+  const multiLineNoInline = () => {
   /* keep these lines commented, but
    change the syntax to a multiline comment
    and remove the inline syntax */
-    "Hello World"
+   return 'Hello World'
+  }
 
 // that's all!
 
